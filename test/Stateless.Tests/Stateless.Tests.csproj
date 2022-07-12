@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <AssemblyName>P1_Stateless.Tests</AssemblyName>
     <DefineConstants>$(DefineConstants);TASKS</DefineConstants>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <TargetFrameworks>net50</TargetFrameworks>
