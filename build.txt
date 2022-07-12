@@ -1,0 +1,6 @@
+cd ./stateless\src\Stateless
+dotnet restore
+dotnet build -c Release
+dotnet publish -f netstandard2.0 -c Release
+dotnet pack .\Stateless.csproj --no-build /p:Configuration=Release --verbosity Detailed
+dotnet nuget push .\bin\Release\P1_Stateless.5.11.1.nupkg --api-key VSTS --source "NuGetPackages"
